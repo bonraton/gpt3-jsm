@@ -1,9 +1,28 @@
-import { Article, Feature, Navbar, Cta, Brand } from './components';
+import { Navbar, Cta, Brand } from './components';
+import {
+  Footer,
+  Blog,
+  Possibility,
+  Features,
+  WhatGPT3,
+  Header,
+} from './containers';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <Article />
+    <div className='App'>
+      <div className='gradient__bg'>
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <Cta />
+      <Blog />
+      <Footer />
     </div>
   );
 }
